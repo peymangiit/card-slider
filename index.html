@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Card Slider</title>
+
+        <!-- Link Swiper's CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+        />
+
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <section class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="card swiper-slide">
+                    <div class="card-image">
+                        <img
+                            src="./OIP (1).jpg"
+                            alt="image profile"
+                        />
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Web Developer</span>
+                        <span class="card-name">Ali Nasirian</span>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Doloremque libero quos nemo quis iure, saepe
+                            quod sapiente vero alias? Modi.
+                        </p>
+                        <button class="card-btn">View More</button>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="card-image">
+                        <img
+                            src="./baradar-jan.jpg-nasirian.jpg"
+                            alt="image profile"
+                        />
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Web Developer</span>
+                        <span class="card-name">Ali Nasirian</span>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Doloremque libero quos nemo quis iure, saepe
+                            quod sapiente vero alias? Modi.
+                        </p>
+                        <button class="card-btn">View More</button>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="card-image">
+                        <img
+                            src="./fun2177-6.jpg"
+                            alt="image profile"
+                        />
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Web Developer</span>
+                        <span class="card-name">Ali Nasirian</span>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Doloremque libero quos nemo quis iure, saepe
+                            quod sapiente vero alias? Modi.
+                        </p>
+                        <button class="card-btn">View More</button>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="card-image">
+                        <img
+                            src="./OIP.jpg"
+                            alt="image profile"
+                        />
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Web Developer</span>
+                        <span class="card-name">Ali Nasirian</span>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Doloremque libero quos nemo quis iure, saepe
+                            quod sapiente vero alias? Modi.
+                        </p>
+                        <button class="card-btn">View More</button>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="card-image">
+                        <img
+                            src="./OIP (2).jpg"
+                            alt="image profile"
+                        />
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Web Developer</span>
+                        <span class="card-name">Ali Nasirian</span>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Doloremque libero quos nemo quis iure, saepe
+                            quod sapiente vero alias? Modi.
+                        </p>
+                        <button class="card-btn">View More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </section>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                effect: "coverflow",
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: "auto",
+                coverflowEffect: {
+                    rotate: 10,
+                    stretch: 0,
+                    depth: 200,
+                    modifier: 1,
+                    slideShadows: true,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+            });
+        </script>
+    </body>
+</html>
